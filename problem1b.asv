@@ -16,12 +16,12 @@ yl = ylim;
 l2 = line([n(2)/exp(1) n(2)/exp(1)],[0,max(yl)]);   %find approximate mode for n = 30
 l1 = line([n(1)/exp(1) n(1)/exp(1)],[0,max(yl)]);   %find approximate mode for n = 40
 
-l2.LineStyle = '-.';                                %line formatting
-l2.Color = get(p2,'Color');
+l2.LineStyle = '--';                                %line formatting
+l2.LineStyle = pget(
 l1.LineStyle = '--';
 
 xlabel('k','interpreter','Latex');                  %set axis labels
 ylabel('P(Z=1)','interpreter','Latex');
-legend('n = 30','n = 40','k_{max} for n = 40','k_{max} for n = 30');
+legend('n=30','n=40','k_{max} for n = 30','k_{max} for n=40');
 
 end
